@@ -23,7 +23,8 @@ class CreateProductCategoriesTable extends Migration
             $table->unsignedBigInteger('sku');
             $table->double('regular_price');
             $table->double('sale_price');
-            $table->string('description');
+            $table->longText('description');
+            $table->timestamps();
 
         });
     }
